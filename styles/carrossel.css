@@ -1,0 +1,127 @@
+.carrossel {
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    background-color: var(--cor_de_fundo);
+}
+
+.carrossel__titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--laranja);
+    background-color: var(--branco);
+    padding: 0.5em 0;
+    text-transform: uppercase;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+
+.card {
+    background-color: var(--branco);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em 1em;
+    padding: 1em 1em;
+}
+
+.card__about {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.card__descrição {
+    text-align: left;
+}
+
+.card__descrição-texto {
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.card__descrição-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--azul);
+    margin: 0.5em 0;
+}
+
+.card__descrição-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000D9;
+}
+
+.card__imagem {
+    margin-left: 0.5em;
+}
+
+.card__botões {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botões__icone-img {
+    margin: 0 0.5em;
+}
+
+.botões__link {
+    background-color: var(--laranja);
+    font-weight: 700;
+    color: var(--branco);
+    padding: 1em 2.2em;
+    text-decoration: none;
+}
+
+@media screen and (min-width:1024px) {
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+    .swiper {
+        width: 60%;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 50%;
+    }
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrosel__container {
+        margin: 0 auto;
+        display: flex;
+        align-items:center ;
+        width: 70%;
+    }
+    .card {
+        margin-left: 2em;
+    }
+    .carrossel__titulo {
+        padding: 1em 0;
+        font-size: 32px;
+    }
+    .swiper-pagination {
+        margin: 0.5em 0;
+    }
+    .carrossel {
+        padding: 0 0.5em;
+    }
+}
